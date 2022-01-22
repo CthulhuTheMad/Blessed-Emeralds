@@ -16,6 +16,8 @@ public class ModItems {
     public static final Item POWERED_EMERALD_SHARD = registerItem("powered_emerald_shard",
             new Item(new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS).rarity(Rarity.RARE)));
     public static final Item BLESSED_EMERALD_PIECE = registerItem("blessed_emerald_piece",
+            new Item(new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS).rarity(Rarity.RARE)));
+    public static final Item BLESSED_EMERALD = registerItem("blessed_emerald",
             new Item(new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS).rarity(Rarity.EPIC)));
 
     public static final Item BLESSED_APPLE = registerItem("blessed_apple",
