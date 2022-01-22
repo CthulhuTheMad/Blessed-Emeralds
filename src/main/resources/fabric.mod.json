@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "blessedemeralds",
+  "version": "${version}",
+
+  "name": "Blessed Emeralds",
+  "description": "Blessed Emeralds is a 1.18 mod that adds to vanilla emeralds!",
+  "authors": [
+    "CthulhuTheMad-Dev, thegreenknight9000-Artist"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/blessedemeralds/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.cthulhuthemad.blessedemeralds.BlessedEmeralds"
+    ]
+  },
+  "mixins": [
+    "blessedemeralds.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
