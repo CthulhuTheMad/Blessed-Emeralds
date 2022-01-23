@@ -6,7 +6,6 @@ import net.cthulhuthemad.blessedemeralds.item.custom.ModAxeItem;
 import net.cthulhuthemad.blessedemeralds.item.custom.ModHoeItem;
 import net.cthulhuthemad.blessedemeralds.item.custom.ModPickaxeItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.block.Material;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
