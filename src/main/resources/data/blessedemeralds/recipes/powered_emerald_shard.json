@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "Y#Y",
+    " X "
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:blaze_powder"
+    },
+    "Y": {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    "#": {
+      "item": "blessedemeralds:emerald_shard"
+    }
+  },
+  "result": {
+    "item": "blessedemeralds:powered_emerald_shard"
+  }
+}

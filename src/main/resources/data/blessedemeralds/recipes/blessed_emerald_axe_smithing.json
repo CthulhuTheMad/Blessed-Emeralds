@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "blessedemeralds:emerald_axe"
+  },
+  "addition": {
+    "item": "blessedemeralds:blessed_emerald"
+  },
+  "result": {
+    "item": "blessedemeralds:blessed_emerald_axe"
+  }
+}

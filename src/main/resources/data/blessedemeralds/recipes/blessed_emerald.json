@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blessedemeralds:blessed_emerald_piece"
+    },
+    {
+      "item": "blessedemeralds:blessed_emerald_piece"
+    },
+    {
+      "item": "blessedemeralds:blessed_emerald_piece"
+    },
+    {
+      "item": "blessedemeralds:blessed_emerald_piece"
+    }
+  ],
+  "result": {
+    "item": "blessedemeralds:blessed_emerald"
+  }
+}

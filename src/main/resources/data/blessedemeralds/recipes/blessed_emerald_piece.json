@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "X#X",
+    " X "
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:end_crystal"
+    },
+    "#": {
+      "item": "blessedemeralds:powered_emerald_shard"
+    }
+  },
+  "result": {
+    "item": "blessedemeralds:blessed_emerald_piece"
+  }
+}

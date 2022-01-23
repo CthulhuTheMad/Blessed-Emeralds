@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "blessedemeralds:emerald_hoe"
+  },
+  "addition": {
+    "item": "blessedemeralds:blessed_emerald"
+  },
+  "result": {
+    "item": "blessedemeralds:blessed_emerald_hoe"
+  }
+}
