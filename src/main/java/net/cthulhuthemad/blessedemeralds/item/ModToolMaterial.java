@@ -1,6 +1,5 @@
 package net.cthulhuthemad.blessedemeralds.item;
 
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -10,12 +9,10 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
 
-    EMERALD(3, 1458, 8.5f, 3.5f, 12, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.EMERALD});
-    }),
-    BLESSED_EMERALD(5, 10000, 10.0F, 6.0F,18, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.BLESSED_EMERALD});
-    });
+    EMERALD(3, 1458, 8.5f, 3.5f, 12, () ->
+            Ingredient.ofItems(Items.EMERALD)),
+    BLESSED_EMERALD(5, 10000, 10.0F, 20.0F,18, () ->
+            Ingredient.ofItems(ModItems.BLESSED_EMERALD));
 
     private final int miningLevel;
     private final int itemDurability;
@@ -24,7 +21,7 @@ public enum ModToolMaterial implements ToolMaterial {
     private final int enchantability;
     private final Lazy<Ingredient> repairIngredient;
 
-    private ModToolMaterial(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
+    ModToolMaterial(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;
@@ -54,6 +51,6 @@ public enum ModToolMaterial implements ToolMaterial {
     }
 
     public Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredient.get();
+        return this.repairIngredient.get();
     }
 }
