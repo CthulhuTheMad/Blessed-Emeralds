@@ -40,6 +40,22 @@ public class ModItems {
             new SwordItem(ModToolMaterial.EMERALD, 4, -2.4F,
                     new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS)));
 
+    public static final Item BLESSED_EMERALD_PICKAXE = registerItem("blessed_emerald_pickaxe",
+            new ModPickaxeItem(ModToolMaterial.BLESSED_EMERALD, 1, -2.8F,
+                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS)));
+    public static final Item BLESSED_EMERALD_AXE = registerItem("blessed_emerald_axe",
+            new ModAxeItem(ModToolMaterial.BLESSED_EMERALD, 5.5F, -3.0F,
+                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS)));
+    public static final Item BLESSED_EMERALD_HOE = registerItem("blessed_emerald_hoe",
+            new ModHoeItem(ModToolMaterial.BLESSED_EMERALD, -3, 0.0F,
+                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS)));
+    public static final Item BLESSED_EMERALD_SHOVEL = registerItem("blessed_emerald_shovel",
+            new ShovelItem(ModToolMaterial.BLESSED_EMERALD, 2, -3.0F,
+                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS)));
+    public static final Item BLESSED_EMERALD_SWORD = registerItem("blessed_emerald_sword",
+            new SwordItem(ModToolMaterial.BLESSED_EMERALD, 4, -2.4F,
+                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS)));
+
     public static final Item BLESSED_APPLE = registerItem("blessed_apple",
             new BlessedAppleItem(new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS)
                     .rarity(Rarity.EPIC).food(ModFoodComponents.BLESSED_APPLE)));

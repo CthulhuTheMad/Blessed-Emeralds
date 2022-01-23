@@ -4,7 +4,6 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.tag.ItemTags;
 import net.minecraft.util.Lazy;
 
 import java.util.function.Supplier;
@@ -14,9 +13,8 @@ public enum ModToolMaterial implements ToolMaterial {
     EMERALD(3, 1458, 8.5f, 3.5f, 12, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.EMERALD});
     }),
-
-    NETHERITE(4, 2031, 9.0F, 4.0F, 15, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.NETHERITE_INGOT});
+    BLESSED_EMERALD(5, 10000, 10.0F, 6.0F,18, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.BLESSED_EMERALD});
     });
 
     private final int miningLevel;
