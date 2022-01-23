@@ -6,6 +6,9 @@ import net.cthulhuthemad.blessedemeralds.item.custom.ModAxeItem;
 import net.cthulhuthemad.blessedemeralds.item.custom.ModHoeItem;
 import net.cthulhuthemad.blessedemeralds.item.custom.ModPickaxeItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.block.Material;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
@@ -39,22 +42,46 @@ public class ModItems {
     public static final Item EMERALD_SWORD = registerItem("emerald_sword",
             new SwordItem(ModToolMaterial.EMERALD, 4, -2.4F,
                     new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS)));
+    public static final Item EMERALD_HELMET = registerItem("emerald_helmet",
+            new ArmorItem(ModArmorMaterials.EMERALD, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS)));
+    public static final Item EMERALD_CHESTPLATE = registerItem("emerald_chestplate",
+            new ArmorItem(ModArmorMaterials.EMERALD, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS)));
+    public static final Item EMERALD_LEGGINGS = registerItem("emerald_leggings",
+            new ArmorItem(ModArmorMaterials.EMERALD, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS)));
+    public static final Item EMERALD_BOOTS = registerItem("emerald_boots",
+            new ArmorItem(ModArmorMaterials.EMERALD, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS)));
 
     public static final Item BLESSED_EMERALD_PICKAXE = registerItem("blessed_emerald_pickaxe",
             new ModPickaxeItem(ModToolMaterial.BLESSED_EMERALD, 1, -2.8F,
-                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS)));
+                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS).rarity(Rarity.EPIC)));
     public static final Item BLESSED_EMERALD_AXE = registerItem("blessed_emerald_axe",
             new ModAxeItem(ModToolMaterial.BLESSED_EMERALD, 5.5F, -3.0F,
-                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS)));
+                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS).rarity(Rarity.EPIC)));
     public static final Item BLESSED_EMERALD_HOE = registerItem("blessed_emerald_hoe",
             new ModHoeItem(ModToolMaterial.BLESSED_EMERALD, -3, 0.0F,
-                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS)));
+                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS).rarity(Rarity.EPIC)));
     public static final Item BLESSED_EMERALD_SHOVEL = registerItem("blessed_emerald_shovel",
             new ShovelItem(ModToolMaterial.BLESSED_EMERALD, 2, -3.0F,
-                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS)));
+                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS).rarity(Rarity.EPIC)));
     public static final Item BLESSED_EMERALD_SWORD = registerItem("blessed_emerald_sword",
-            new SwordItem(ModToolMaterial.BLESSED_EMERALD, 4, -2.4F,
-                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS)));
+            new SwordItem(ModToolMaterial.BLESSED_EMERALD, 5, -2.4F,
+                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS).rarity(Rarity.EPIC)));
+    public static final Item BLESSED_EMERALD_HELMET = registerItem("blessed_emerald_helmet",
+            new ArmorItem(ModArmorMaterials.BLESSED_EMERALD, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS).rarity(Rarity.EPIC)));
+    public static final Item BLESSED_EMERALD_CHESTPLATE = registerItem("blessed_emerald_chestplate",
+            new ArmorItem(ModArmorMaterials.BLESSED_EMERALD, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS).rarity(Rarity.EPIC)));
+    public static final Item BLESSED_EMERALD_LEGGINGS = registerItem("blessed_emerald_leggings",
+            new ArmorItem(ModArmorMaterials.BLESSED_EMERALD, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS).rarity(Rarity.EPIC)));
+    public static final Item BLESSED_EMERALD_BOOTS = registerItem("blessed_emerald_boots",
+            new ArmorItem(ModArmorMaterials.BLESSED_EMERALD, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS).rarity(Rarity.EPIC)));
 
     public static final Item BLESSED_APPLE = registerItem("blessed_apple",
             new BlessedAppleItem(new FabricItemSettings().group(ModItemGroup.BLESSED_EMERALDS)
